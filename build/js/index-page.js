@@ -17,13 +17,13 @@ $(function(){
 
 	/*------- Video ---------*/
 	var video 		= document.getElementById("video");
-			videoSrc 	= 'water.mp4';
+		videoSrc 	= 'water.mp4';
 
 	if (!device.tablet() && !device.mobile()) {
 		video.src = videoSrc;
 		video.load();
 
-		video.onloadeddata = function(event){
+		video.onloadeddata = function() {
 			$(this).css('opacity',1);		
 		}
 	}
