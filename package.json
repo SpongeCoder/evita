@@ -1,0 +1,23 @@
+{
+  "name": "Evita",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "colors": "*",
+    "gulp": "^3.8.1",
+    "gulp-autoprefixer": "*",
+    "gulp-connect": "*",
+    "gulp-cssmin": "*",
+    "gulp-filter": "*",
+    "gulp-imagemin": "*",
+    "gulp-jade": "*",
+    "gulp-rigger": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "gulp-watch": "*",
+    "gulp.spritesmith": "*",
+    "imagemin-pngquant": "*"
+  }
+}

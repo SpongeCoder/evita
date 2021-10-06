@@ -1,0 +1,12 @@
+.slider {
+	width: 993px;
+	height: 364px;
+	border:2px solid $blue;
+	margin: 0 auto;
+	position: absolute;
+
+	@import "menu";
+	@import "images";
+	@import "link";
+
+}

@@ -1,0 +1,21 @@
+.logo {
+	opacity:1;
+	position: absolute;
+	transition:opacity .3s;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top:2px;
+	width: 89px;
+	height: 89px;
+
+
+	&_big {
+		opacity:0;
+		width: 157px;
+		top:25px;
+		height: 157px;	
+	}
+
+}	
+	

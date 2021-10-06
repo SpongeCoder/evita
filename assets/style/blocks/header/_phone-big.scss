@@ -1,0 +1,20 @@
+.phone {
+	top: 80px;
+	
+	p {
+		color: #000;
+		
+		span {
+			color: $gray;
+		}
+	}
+
+	a {
+		color: $blue;
+		border-bottom:2px dotted $blue;
+		
+		&:hover {
+			color: darken($blue,10%);
+		}
+	}
+}

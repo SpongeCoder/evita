@@ -1,0 +1,55 @@
+form {
+	margin: 20px auto 0 auto;
+	padding: 0 65px;
+	width: 340px;
+
+	input,
+	textarea {
+		display: block;	
+		border:2px solid #d3ecf1;
+		border-radius:7px;
+		text-align: center;
+		width: 100%;
+		outline:none;
+		font-size: 18px;
+		padding: 7px 0;
+		color: $dBlue;
+		margin: 0 0 10px 0;
+		transition:all .3s;
+		resize: none;
+
+		&::-webkit-input-placeholder {
+			color: $dBlue;
+		}
+
+		&:-moz-placeholder { /* Firefox 18- */
+		  color: $dBlue;
+		}
+
+		&::-moz-placeholder {  /* Firefox 19+ */
+		  color: $dBlue;
+		}
+
+		&:-ms-input-placeholder {  
+		  color: $dBlue;
+		}
+
+		&:focus {
+			border:2px solid darken(#d3ecf1,10%);
+		}
+
+		&.error {
+			border:2px solid lighten(#b41e29,30%);
+		}
+	}
+	
+	textarea {
+		height: 100px;
+	}
+
+	input[type=submit] {
+		@include button(275px, 7px 0);
+		font-size: 22px;
+		margin: 15px auto 40px auto;
+	}
+}

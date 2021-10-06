@@ -1,0 +1,18 @@
+.request {
+	width: $width;
+	margin: 40px auto 0 auto;
+	text-align: center;
+
+	h4 {
+		color: $dBlue;
+		font-size: 30px;
+		font-weight: 500;
+		margin: 0 0 20px 0;
+		display: inline-block;
+	}
+
+	button {
+		@include button(400px, 14px 0);
+		font-size: 24px;
+	}
+}

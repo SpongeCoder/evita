@@ -1,0 +1,26 @@
+@mixin button($bWidth, $padding) {
+	border:none;
+	background-color: $blue;
+	box-shadow:0 6px $dBlue;
+	border-radius:5px;
+	color: $white;
+	text-transform: uppercase;
+	font-size: 18px;
+	text-align: center;
+	font-family: $font;
+	position: relative;
+	outline:none;
+	width: $bWidth;
+	padding: $padding;
+	transition:none;
+
+	&:hover {
+		top:2px;
+		box-shadow:0 4px $dBlue;
+	}
+
+	&:active {
+		top:6px;
+		box-shadow:0 0px $dBlue;
+	}
+}

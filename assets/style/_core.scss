@@ -1,0 +1,43 @@
+body {
+	font-family: $font;
+	min-width: $width;
+
+}
+
+p {
+	font-size: 14px;
+	color: $dGray;
+}
+
+ul {
+	color: $dGray;
+	font-size: 14px;
+}
+
+a {
+	color: $blue;
+	font-size: 14px;
+	transition:color .3s;
+	text-decoration: underline;
+
+	&:hover {
+		color: darken($blue,10%);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $dBlue;
+	font-weight: 500;
+}
+
+input, button, textarea {
+	font-family: $font;
+}
+
+.clear {
+	clear:both;
+}
+
+.fancybox-overlay {
+	background: rgba(85,140,205, .65);
+}

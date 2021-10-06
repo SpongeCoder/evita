@@ -1,0 +1,42 @@
+footer
+	section
+		address.
+			<span>© 2015</span> «Эвита»<br>
+			Тула. Ханинский проезд д 23-а<br>
+			8 (4872) 39-29-03
+		nav
+			ul
+				li
+					a(href="#") О нас
+				li
+					a(href="#") Продукция
+				li
+					a(href="#") Новости
+			ul
+				li
+					a(href="#") Преимущества
+				li
+					a(href="#") Отзывы
+				li
+					a(href="#") Контакты
+		a(href="http://odnavosmaya.ru/").author Веб-студия<br> "Одна восьмая"
+		.clear
+
+.feedback.js-phone
+	h4 Обратный звонок
+	form(action="/", method="get")
+		input(type="hidden", name="feedback", value="phone" )
+		input(type="text", placeholder="Имя", name="name")
+		input(type="tel", placeholder="Телефон", name="phone")
+		input(type="submit" value="Позвоните мне")
+.feedback.js-request
+	h4 Оформить заявку
+	form(action="/", method="get")
+		input(type="hidden", name="feedback", value="request" )
+		input(type="text", placeholder="Имя", name="name")
+		input(type="tel", placeholder="Телефон", name="phone")
+		input(type="email", placeholder="E-mail", name="email")
+		textarea(name="message", placeholder="Комментарий")
+		input(type="submit" value="Отправить")
+
+script(src="js/main.js")

@@ -1,0 +1,27 @@
+.link {
+	display: block;
+	font-size: 18px;
+	color: $white;
+	text-decoration: none;
+	position: absolute;
+	right: 0;
+	background-color: $dBlue;
+	//padding: 14px 25px 14px 2px;
+	height: 52px;
+	line-height: 52px;
+	padding: 0 25px 0 2px;
+	z-index:2;
+	bottom:15px;
+	text-transform: uppercase;
+
+	&::before {
+		content: ""; 
+    display: inline-block;
+    position: absolute;
+    border: 26px solid transparent; 
+    border-color: $dBlue;
+    border-left-color: transparent !important;
+    left:-50px;
+    top:0;
+	}
+}

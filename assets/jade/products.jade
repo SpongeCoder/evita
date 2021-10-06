@@ -1,0 +1,148 @@
+doctype html
+html
+	meta(charset='utf-8')
+	link(rel="stylesheet", href="css/style.css")
+	link(rel="icon", href="img/favicon.png")
+	title Продукция
+
+	header
+		section
+			nav
+				ul
+					li
+						a(href="about.html") О нас
+					li
+						a(href="products.html").active Продукция
+					li
+						a(href="advantages.html") Преимущества
+					li
+						a(href="news.html") Новости
+			.logo
+				a(href="/")
+					img(src="img/small-logo.png", alt="Евита")
+			nav
+				ul
+					li
+						a(href="reviews.html") Отзывы
+					li
+						a(href="contacts.html") Контакты
+			.phone
+				p <span>+7 (4872)</span> 36-29-22
+				a(href="#").feedback-phone Обратный звонок
+
+	main.inner
+		h1 Продукция
+		article.products
+			section
+				.products-left
+					.js-menu
+						div.conteiner
+							aside.active
+								a(href="#", data-index="1") Пиво бутылочное, емк. 0,47 л
+							aside
+								a(href="#", data-index="2") Пиво бутылочное, емк. 0,5 л
+							aside
+								a(href="#", data-index="3") Пиво бутылочное, емк. 0.33 л
+						div.conteiner
+							aside
+								a(href="#", data-index="1") бутылочное, емк. 0,47 л
+							aside
+								a(href="#", data-index="2") Пиво  емк. 0,5 л
+							aside
+								a(href="#", data-index="3") Пиво  0.33 л
+
+				.products-right
+					.js-menu.active(data-index="1")
+						div
+							p.fotorama__select Балтика Cooler
+							p.fotorama__select Балтика Кулер Лайм
+							p.fotorama__select Балтика Кулер Текила Лайм
+							p.fotorama__select Балтика Praha
+							p.fotorama__select Балтика Munchen
+							p.fotorama__select Бархатное Фирменное Темное
+							p.fotorama__select Арсенальное Традиционное
+							p.fotorama__select Арсенальное Крепкое
+							p.fotorama__select Арсенальное ТАОПиН
+							p.fotorama__select Арсенальное Ледяное
+							p.fotorama__select Жигулевское
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живо
+						div
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живо
+						div
+							p.fotorama__select Арсенальное ТАОПиН
+							p.fotorama__select Арсенальное Ледяное
+							p.fotorama__select Жигулевское
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живоp
+							p.fotorama__select Жигулевское Фирменное Живо
+					.js-menu(data-index="2")
+						div
+							p.fotorama__select Арсенальное ТАОПиН
+							p.fotorama__select Арсенальное Ледяное
+							p.fotorama__select Жигулевское
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живоp
+							p.fotorama__select Жигулевское Фирменное Живо
+						div
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живо
+					.js-menu(data-index="3")
+						div
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живо
+						div
+							p.fotorama__select Арсенальное ТАОПиН
+							p.fotorama__select Арсенальное Ледяное
+							p.fotorama__select Жигулевское
+							p.fotorama__select Сибирский Бочонок Классическое
+							p.fotorama__select Большая Кружка Янтарное
+							p.fotorama__select Holsten
+							p.fotorama__select Holsten Weiss
+							p.fotorama__select Holsten Dunkel
+							p.fotorama__select Ярпиво Янтарное
+							p.fotorama__select Воронежское Жигулевское
+							p.fotorama__select Жигулевское Фирменное Живоp
+							p.fotorama__select Жигулевское Фирменное Живо
+						
+
+
+	include ./blocks/request.jade	
+	include ./blocks/footer.jade

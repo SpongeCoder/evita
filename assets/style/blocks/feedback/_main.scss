@@ -1,0 +1,46 @@
+.feedback {
+	display: none;
+	@import "form";
+
+	h4 {
+		color: $dBlue;
+		text-align: center;
+		margin: 20px 0 0 0;
+		padding: 0 0 25px 0;
+		position: relative;
+		font-size: 30px;
+		font-weight: 500;
+		
+		&::after {
+			content:'';
+			position: absolute;
+			width: 100%;
+			background: url('../img/border-bg.png') repeat-x;
+			height: 11px;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&-wrap {
+
+		.fancybox-inner {
+			border-radius:5px;
+			box-shadow:0px 0px 32px rgba(41,64,144,.71);
+			padding-bottom: 10px;
+		}
+		
+		.fancybox-close {
+			background: url('../img/main.png') no-repeat;
+			background-position: -298px -166px;
+			width: 18px;
+			height: 18px;
+			top:20px;
+			right:20px;
+
+			&:hover {
+				background-position: -275px -166px;
+			}
+		}
+	}
+}

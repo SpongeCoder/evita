@@ -1,0 +1,51 @@
+header {
+	width: 100%;
+	min-width: $width;
+	position: fixed;
+	height: 94px;
+	top:0;
+	border-bottom:5px solid $dBlue;
+	transition:all .3s;
+	background: $blue;
+	z-index:12;
+
+	&.big {
+		height: 9px;
+		background: $dBlue;
+		border-bottom:0px solid $dBlue;
+		position: fixed;
+		
+		section {
+			height: 99px;
+		}
+
+		@import "menu-big";
+		@import "logo-big";
+		@import "phone-big";
+
+		&+main {
+			margin-top: 200px;
+		}
+	}
+
+	&+main {
+		margin-top: 200px;
+	}
+	
+	section {
+		width: $width;
+		margin: 0 auto;
+		position: relative;
+	}
+	
+	@import "menu";
+	@import "logo";
+	@import "phone";
+}
+
+.wrapp {
+	height: 185px;
+	background: $white;
+	position: relative;
+	border-top: 9px solid rgb(41, 64, 144);
+}

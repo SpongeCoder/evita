@@ -1,0 +1,25 @@
+.pagination {
+	text-align: center;
+	margin-top: 35px;
+
+	a, span {
+		padding: 5px 10px;
+		font-size: 14px;
+		margin: 0 7px 0 0;
+		transition:background .3s;
+	}
+
+	span {
+		color: $white;
+		background: $blue;
+	}
+
+	a {
+		color: $dGray;
+		
+		&:hover {
+			background-color: #f1f5f8;
+			text-decoration: none;
+		}
+	}
+}

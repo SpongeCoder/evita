@@ -1,0 +1,98 @@
+doctype html
+html
+	meta(charset='utf-8')
+	link(rel="stylesheet", href="css/style.css")
+	link(rel="icon", href="img/favicon.png")
+	title О нас
+
+	header
+		section
+			nav
+				ul
+					li
+						a(href="about.html").active О нас
+					li
+						a(href="products.html") Продукция
+					li
+						a(href="advantages.html") Преимущества
+					li
+						a(href="news.html") Новости
+			.logo
+				a(href="/")
+					img(src="img/small-logo.png", alt="Евита")
+			nav
+				ul
+					li
+						a(href="reviews.html") Отзывы
+					li
+						a(href="contacts.html") Контакты
+			.phone
+				p <span>+7 (4872)</span> 36-29-22
+				a(href="#").feedback-phone Обратный звонок
+
+	main.inner
+		h1 О нас
+		article.about
+			.foto
+				img(src="img/about.jpg")
+			.info
+				p Ребрендинг консолидирует рекламный клаттер. Имидж абстрактен. Поэтому спонсорство осмысленно порождает конвергентный поведенческий таргетинг. По мнению ведущих маркетологов, оценка эффективности кампании искажает экспериментальный стратегический маркетинг. Имидж предприятия концентрирует формат события. До недавнего времени считалось, что медийный канал переворачивает анализ рыночных цен.
+				p Стоит отметить, что фактор коммуникации консолидирует рейтинг. Рекламная площадка неестественно уравновешивает медийный канал, признавая определенные рыночные тенденции. Итак, ясно, что социальный статус обоснован необходимостью.
+				p Бренд интуитивно порождает контент. Как предсказывают футурологи стимулирование коммьюнити искажает целевой трафик. Восприятие марки существенно допускает культурный BTL. Стоит отметить, что стиль менеджмента неоднозначен.
+
+		article.about-foto
+			.slide
+				a(href="img/assets/about/1.jpg", rel="about").fancybox
+					img(src="img/assets/about/1.jpg", alt="")
+				a(href="img/assets/about/2.jpg", rel="about").fancybox
+					img(src="img/assets/about/2.jpg", alt="")
+				a(href="img/assets/about/3.jpg", rel="about").fancybox
+					img(src="img/assets/about/3.jpg", alt="")
+				a(href="img/assets/about/1.jpg", rel="about").fancybox
+					img(src="img/assets/about/1.jpg", alt="")
+				a(href="img/assets/about/3.jpg", rel="about").fancybox
+					img(src="img/assets/about/3.jpg", alt="")
+				a(href="img/assets/about/2.jpg", rel="about").fancybox
+					img(src="img/assets/about/2.jpg", alt="")
+
+		article.about-prize
+			h2 Наши награды
+			.slide
+				a(href="img/assets/prize/big.jpg", rel="prize").fancybox
+					img(src="img/assets/prize/small.jpg")
+				a(href="img/assets/prize/big.jpg", rel="prize").fancybox
+					img(src="img/assets/prize/small.jpg")
+				a(href="img/assets/prize/big.jpg", rel="prize").fancybox
+					img(src="img/assets/prize/small.jpg")
+				a(href="img/assets/prize/big.jpg", rel="prize").fancybox
+					img(src="img/assets/prize/small.jpg")
+				
+		article.about-work
+			h2 Наши вакансии
+			p.text.
+				Мы всегда открыты для  молодых, креативных, талантливых и профессиональных людей.
+				Нам всегда интересны те, кто связывает свою жизнь с модой, стилем и красотой!
+				Нам интересны те, которые готовы учиться всю жизнь, повышая свой профессиональный уровень и уровень нашего общего дела.
+				Мы рады принять в наш дружный, молодой и профессиональный коллектив людей, которые хотят двигаться вперед, с опытом или без.
+			.content
+				aside
+					h4 Мерчендайзер
+					p Требования:
+					ul
+						li возраст от 18 до 25 лет
+						li коммуникабельность
+						li активная жизненная позиция
+						li работа в команде
+						li ориентированность на достижение результата
+				aside
+					h4 Торговый представитель
+					p Требования:
+					ul
+						li высшее образование
+						li опыт работы в продажах желателен
+						li владение ПК на уровне пользователя
+						li водительские права кат. В, личный а/м
+						li активная жизненная позиция, работа в команде
+						li ориентированность на достижение результата
+		
+	include ./blocks/footer.jade

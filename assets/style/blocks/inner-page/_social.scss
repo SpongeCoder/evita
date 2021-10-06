@@ -1,0 +1,30 @@
+.social {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 0 0 0 9px;
+	position: relative;
+  top: 8px;
+	background: url('../img/social.png') no-repeat;
+	cursor:pointer;
+
+	&_fb {
+		background-position: -3px -3px;
+	}
+
+	&_vk {
+		background-position: -36px -3px;
+	}
+
+	&_tw {
+		background-position: -69px -3px;
+	}
+	
+	&_od {
+		background-position: -102px -3px;
+	}
+
+	&_gg {
+		background-position: -135px -3px;
+	}
+}

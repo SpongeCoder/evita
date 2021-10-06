@@ -1,0 +1,133 @@
+.products {
+	padding-bottom: 35px;
+	position: relative;
+
+	&::after {
+		content:'';
+		position: absolute;
+		width: 100%;
+		height: 11px;
+		background: url('../img/border-bg.png') repeat-x;
+		bottom:0;
+		left:0;
+	}
+
+	section {
+		position: relative;
+		background: url('../img/products.png') no-repeat;
+		width: 776px;
+		height: 821px;
+		margin: 30px auto 0 auto;
+
+		&::before {
+			content:"";
+			position: absolute;
+			top:0;
+			background: url('../img/products-menu.jpg') no-repeat;
+			height: 819px;
+			width: 80px;
+			background-position: 0 0;
+			left: -100px;
+		}
+
+		&::after {
+			content:"";
+			position: absolute;
+			top:0;
+			background: url('../img/products-menu.jpg') no-repeat;
+			height: 819px;
+			width: 80px;
+			background-position: -80px 0;
+			right:-100px;
+		}
+	}
+	
+	&-left {
+		float: left;
+		width: 373px;
+		margin-left: 12px;
+		margin-top: 22px;
+
+		aside {
+			position: relative;
+
+			&.active {
+				background: $blue;
+				
+				a {
+					color: $white;
+				}
+
+				&::before {
+					content:'';
+					position: absolute;
+					left: -33px;
+					top: 4px;
+					border: 15px solid transparent; 
+			    border-color: #355c8b;
+			    border-left-color: transparent !important;
+				}
+
+				&::after {
+					content:'';
+					position: absolute;
+					width: 3px;
+					height: 32px;
+					background: #7fb3ef;
+					top:0;
+					left:-3px;
+				}
+			}
+		}
+
+		a {
+			display: inline-block;
+			color: $dGray;
+			text-decoration: none;
+			font-size: 15px;
+			font-weight: 500;
+			height: 30px;
+			line-height: 30px;
+			margin: 0 0 0 35px;
+			transition:none;
+			position: relative;
+			border-bottom:2px solid transparent;
+
+			&:hover {
+				border-bottom:2px solid $blue;
+			}
+		}
+	}
+
+	&-right {
+		float: right;
+		position: relative;
+		width: 382px;
+  	margin-top: 22px;
+
+  	p {
+  		margin: 10px 0 10px 20px;
+  		font-size: 15px;
+			font-weight: 500;
+
+  		&:first-child {
+  			margin-top: 0;
+  		}
+  	}
+
+  	.js-menu {
+  		opacity: 0;
+  		position: absolute;
+  		top:0;
+  		z-index: 1;
+  		transition:opacity .3s;
+			
+			&.active,
+  		&:first-of-type {
+  			opacity:1;
+  			z-index:2;
+  		}
+  	}
+	}
+
+}

@@ -1,0 +1,50 @@
+doctype html
+html
+	meta(charset='utf-8')
+	link(rel="stylesheet", href="css/style.css")
+	link(rel="icon", href="img/favicon.png")
+	title Преимущества
+
+	header
+		section
+			nav
+				ul
+					li
+						a(href="about.html") О нас
+					li
+						a(href="products.html") Продукция
+					li
+						a(href="advantages.html").active Преимущества
+					li
+						a(href="news.html") Новости
+			.logo
+				a(href="/")
+					img(src="img/small-logo.png", alt="Евита")
+			nav
+				ul
+					li
+						a(href="reviews.html") Отзывы
+					li
+						a(href="contacts.html") Контакты
+			.phone
+				p <span>+7 (4872)</span> 36-29-22
+				a(href="#").feedback-phone Обратный звонок
+
+	main.inner
+		h1 Преимущества
+		article.advantages
+			aside.repair
+				p Самостоятельно ремонтируем холодильное оборудование
+			aside.return
+				p Производим возврат бракованной и просроченной продукции
+			aside.delivery
+				p Осуществляем<br> доставку заказа<br> уже на следующий день
+			aside.sign
+				p Обеспечваем всеми рекламными материалами
+			aside.sale
+				p Множество акций<br> и бонусных программ
+			aside.calc
+				p Гибкая система<br> платежей
+			
+	include ./blocks/request.jade			
+	include ./blocks/footer.jade

@@ -1,0 +1,91 @@
+.round {
+	clear:both;
+	width: $width;
+	margin: 40px auto 0 auto;
+	position: relative;
+	padding: 30px 0 0 0;
+
+	&::before,
+	&::after {
+		content:'';
+		position: absolute;
+		background: url('../img/border-bg.png') repeat-x;
+		height: 11px;
+		width: 100%;
+		left: 0;
+	}
+
+	&::before {
+		top:0;
+	}
+
+	&::after {
+		bottom:0;
+	}
+
+
+	h3 {
+		margin: 0 0 50px 0;
+	}
+
+	aside {
+		float: left;
+		width: 200px;
+		margin-right: 35px;
+		padding: 0 50px;
+		height: 250px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+
+		p {
+			text-align: center;
+
+			&:first-child {
+				color: $white;
+				font-size: 60px;
+				font-weight: bold;
+				position: relative;
+				z-index:2;
+				margin: 0;
+
+
+				&::before {
+					content:'';
+					position: absolute;
+					border-radius:50%;
+					border:3px solid $blue;
+					width: 159px;
+				  height: 159px;
+				  top: -38px;
+				  left: 0;
+				  right: 0;
+				  margin: 0 auto;
+				}
+
+				&::after {
+					content:'';
+					position: absolute;
+					width: 153px;
+					height: 153px;
+					border-radius:50%;
+					background-color: $blue;
+					top: -32px;
+				  left: 0px;
+				  right: 0;
+				  margin: 0 auto;
+				  z-index: -1;
+				}
+			}
+
+			&:last-child {
+				color: #010101;
+				font-size: 24px;
+				font-weight: bold;
+				margin: 60px 0 0 0;
+			}
+
+		}
+	}
+}
